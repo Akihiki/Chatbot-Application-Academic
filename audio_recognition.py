@@ -1,3 +1,5 @@
+import asyncio
+from threading import Timer
 from webbrowser import get
 
 import speech_recognition as sr
@@ -21,7 +23,8 @@ def get_audio():
 def audio_to_text(audio, lang):
     text = ""
     try:
-        text = r.recognize_google(audio,language=lang)  # , language="fr-FR"
+        text = r.recognize_google(audio,language=lang)
+        # , language="fr-FR"
     except sr.UnknownValueError:
         print("Speech recognition could not understand audio")
     except sr.RequestError:
@@ -32,7 +35,7 @@ def audio_to_text(audio, lang):
 def play_sound(text,language):
     try:
         tts = gtts.gTTS(text,lang=language)  # , lang='fr'
-        tempfile = "/home/orwel/temp.mp3"
+        tempfile = "/home/akihiki/temp.mp3"
         tts.save(tempfile)
         playsound(tempfile)
         os.remove(tempfile)

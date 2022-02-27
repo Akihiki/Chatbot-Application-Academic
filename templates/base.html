@@ -2,48 +2,64 @@
 <html lang="en">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 <head>
     <meta charset="UTF-8">
     <title>Chatbot</title>
 </head>
 <body>
-<div class="container">
-    <div class="chatbox">
-        <div class="chatbox__support">
-            <div class="chatbox__header">
-                <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+<div class="alo">
+    <div class="container">
+        <video autoplay loop id="myVideo">
+            <source src="../static/videos/starter1.0.mp4" type="video/mp4">
+            <!--  <source src="../static/videos/Shortest%20Video%20on%20Youtube.mp4" type="video/mp4">-->
+        </video>
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                             alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">IRISI 2 CHATBOT</h4>
+                        <p class="chatbox__description--header">Hi. We are glad to have you here</p>
+                    </div>
                 </div>
-                <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                <p>
+                        <select class="form-select" name="langs" id="langs">
+                            <option value="ar-AR">Arabic</option>
+                            <option value="fr-FR">French</option>
+                            <option value="en-US" selected>English</option>
+                        </select>
+                    </p>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <!--                <label for="langs">Choose a lang:</label>-->
+                    <i class="fas fa-microphone fa-2x chatbox__send--footer audio__button" style="margin: 4px; margin-right: 6px"></i>
+                    <input type="text" placeholder="Write a message...">
+                    <!--                <button class="chatbox__send&#45;&#45;footer send__button">Send</button>-->
+                    <i class="fas fa-paper-plane fa-2x chatbox__send--footer send__button" style="margin-bottom: 4px"></i>
                 </div>
             </div>
-            <div class="chatbox__messages">
-                <div></div>
+            <div class="chatbox__button">
+<!--                <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}"/></button>-->
+                <i class="fas fa-comments fa-4x"></i>
             </div>
-            <div class="chatbox__footer">
-                <label for="langs">Choose a lang:</label>
-                <select name="langs" id="langs">
-                  <option value="ar-AR">Arabic</option>
-                  <option value="fr-FR">French</option>
-                  <option value="en-US">English</option>
-                </select>
-                <button class="chatbox__send--footer audio__button"><div class="icon-chat fas fa-microphone"></div></button>
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
-            </div>
-        </div>
-        <div class="chatbox__button">
-            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
         </div>
     </div>
 </div>
-
-    <script>
-        $SCRIPT_ROOT={{request.script_root|tojson}};
-    </script>
-    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+<script>
+    $SCRIPT_ROOT = {{request.script_root | tojson}};
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 
 </body>
 </html>

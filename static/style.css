@@ -12,8 +12,13 @@ body {
 }
 
 *, html {
-    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
-    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    /*--primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);*/
+    /*--secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);*/
+    /*--primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);*/
+    /*--secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);*/
+    /*--primary: #581B98;*/
+    --primaryGradient: linear-gradient(93.12deg, #00F260 0.52%, #0575E6 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #0575E6 -2.14%, #00F260 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
     --primary: #581B98;
@@ -131,6 +136,23 @@ body {
     font-size: .9rem;
     color: white;
 }
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.alo {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
 
 /* Messages */
 .chatbox__messages {
@@ -139,7 +161,8 @@ body {
 
 .messages__item {
     margin-top: 10px;
-    background: #E0E0E0;
+    /*background: #E0E0E0;*/
+    background: #2193b0;
     padding: 8px 12px;
     max-width: 70%;
 }
@@ -155,7 +178,9 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background: var(--primary);
+    /*background: var(--primary);*/
+    /*background: var(--primary);*/
+    background: #38ef7d;
     color: white;
 }
 
@@ -198,3 +223,4 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+

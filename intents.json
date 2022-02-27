@@ -3,16 +3,21 @@
     {
       "tag": "greetingar",
       "patterns": [
-        "السلام عليكم"
+        "السلام عليكم",
+        "اهلا",
+        "مرحبا"
       ],
       "responses": [
-        " عليكم السلام "
+        " عليكم السلام يا اصدقائي رضا و سعيد ",
+        " اهلا يا اصدقائي رضا و سعيد "
       ]
     },
     {
       "tag": "greetingfr",
       "patterns": [
-        "bonjour"
+        "bonjour",
+        "bonsoir",
+        "coucou"
       ],
       "responses": [
         "bonjour said et reda"
@@ -29,10 +34,32 @@
         "Good day"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hi Reda and Said"
+      ]
+    },
+    {
+      "tag": "goodbyear",
+      "patterns": [
+        "الى اللقاء",
+        "وداعا",
+        "طاب يومك"
+      ],
+      "responses": [
+        "الى اللقاء",
+        "وداعا",
+        "وداعا عد مجددا",
+        "طاب يومك"
+      ]
+    },
+    {
+      "tag": "goodbyefr",
+      "patterns": [
+        "Au revoir"
+      ],
+      "responses": [
+        "Au revoir",
+        "A dieu",
+        "Prends soin de toi"
       ]
     },
     {
@@ -49,6 +76,27 @@
       ]
     },
     {
+      "tag": "thanksar",
+      "patterns": [
+        "شكرا",
+        "شكرا لك",
+        "مشكور"
+      ],
+      "responses": [
+        "من دواعي سروري"
+      ]
+    },
+    {
+      "tag": "thanksfr",
+      "patterns": [
+        "Merci",
+        "Merci beacoup"
+      ],
+      "responses": [
+        "De rien"
+      ]
+    },
+    {
       "tag": "thanks",
       "patterns": [
         "Thanks",
@@ -57,9 +105,31 @@
         "Thank's a lot!"
       ],
       "responses": [
-        "Happy to help!",
-        "Any time!",
         "My pleasure"
+      ]
+    },
+    {
+      "tag": "funnyar",
+      "patterns": [
+        "اخبرني نكتة",
+        "نكتة",
+        "نكته",
+        "اضحكني"
+      ],
+      "responses": [
+        "سأل الأستاذ طلابه:هل الثعلب يبيض أم يلد قال الطالب: الثعلب مكّار يا أستاذ أتوقع منه كل شيء"
+      ]
+    },
+    {
+      "tag": "funnyfr",
+      "patterns": [
+        "Dis moi une blague",
+        "blague",
+        "rire",
+        "je veux rire"
+      ],
+      "responses": [
+        "Comment appelle-t-on un alligator qui enquête? Un investi gator."
       ]
     },
     {
@@ -72,6 +142,145 @@
       "responses": [
         "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
         "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "definitionar",
+      "patterns": [
+        "مدير موارد اوراكل",
+        " تعريف مدير موارد اوراكل",
+        "التعريف",
+        "ما هو مدير الموارد"
+      ],
+      "responses": [
+        "يسمح مدير موارد اوراكل بتخصيص موارد الأجهزة. عندما يقوم العديد من المستخدمين بتنفيذ مهام ذات أولويات مختلفة في نفس الوقت ، يمكن التعامل مع جلسات مختلفة بأولويات مختلفة"
+      ]
+    },
+    {
+      "tag": "definitionfr",
+      "patterns": [
+        "c'est qoui oracle resource manager?",
+        "oracle resource manager",
+        "orm",
+        "defintion de oracle resource manager"
+      ],
+      "responses": [
+        "Oracle Resource Manager est une fonctionnalité Enterprise Edition qui fournit un ensemble d'API PL/SQL qui permettent a l'administrateur de base de données d'attribuer une priorité aux sessions, en veillant à ce que les transactions les plus importantes obtiennent la majeure partie des ressources système"
+      ]
+    },
+    {
+      "tag": "definition",
+      "patterns": [
+        "what is oracle resource manager?",
+        "oracle resource manager",
+        "orm",
+        "orm definition",
+        "definition"
+      ],
+      "responses": [
+        "Oracle Resource Manager is an Enterprise Edition feature that provides a set of PL/SQL APIs that allow the DBA to assign a priority to sessions, making sure that the most important transactions get the major share of system resources"
+      ]
+    },
+    {
+      "tag": "tasksar",
+      "patterns": [
+        "مادا يفعل مدير الموارد",
+        "ماذا يفعل مدير الموارد",
+        "مادا يفعل"
+      ],
+      "responses": [
+        "أولاً ، يمكن أن يحد من عدد الخوادم المتوازية التي يمكن لمجموعة من المستخدمين استخدامها. \n\nإنشاء تجمع جلسة نشط.\n\nمنع تنفيذ العمليات التي ستعملها تقديرات المُحسِّن لفترة أطول من الحد المعين."
+      ]
+    },
+    {
+      "tag": "tasksfr",
+      "patterns": [
+        "quel sont les principales fonctions de oracle resource manager?",
+        "quel sont les principales fonctions?",
+        "principales fonctions?"
+      ],
+      "responses": [
+        "Bon, je vais partager avec vous 3 des principales fonctions : tout d'abord, il peut limiter le nombre de serveurs parallèles qu'un groupe d'utilisateurs peut utiliser. Cela garantit que tous les serveurs parallèles disponibles ne sont pas alloués à un seul groupe d'utilisateurs.\n\nCréez un pool de sessions actif. Un pool de sessions actives consiste en un nombre maximal spécifié de sessions utilisateur autorisées à être actives simultanément au sein d'un groupe d'utilisateurs.\n\nEmpêchez l'exécution d'opérations que l'optimiseur estime qu'elles s'exécuteront plus longtemps qu'une limite spécifiée."
+      ]
+    },
+    {
+      "tag": "tasks",
+      "patterns": [
+        "tell me what oracle resource manager can do ?",
+        "what can it do",
+        "what does it do",
+        "main functions",
+        "what are oracle resource manage main functions"
+      ],
+      "responses": [
+        "Okay I will share with you 3 of the main functions: firstly, it can Limit the number of parallel servers that a group of users can use. This ensures that all the available parallel servers are not allocated to only one group of users.\n\nCreate an active session pool. An active session pool consists of a specified maximum number of user sessions allowed to be concurrently active within a group of users. \n\nPrevent the execution of operations that the optimizer estimates will run for a longer time than a specified limit."
+      ]
+    },
+    {
+      "tag": "elementsar",
+      "patterns": [
+        "عناصر رئيسية",
+        "عناصر رئيسيه",
+        "ما هي عناصر مدير الموارد"
+      ],
+      "responses": [
+        "هناك 3 عناصر رئيسية وهي: مجموعة مستهلكي الموارد وخطة الموارد وتوجيهات خطة الموارد"
+      ]
+    },
+    {
+      "tag": "elementsfr",
+      "patterns": [
+        "éléments principaux",
+        "quelles sont les éléments principaux de oracle resource manager",
+        "éléments"
+      ],
+      "responses": [
+        "Il y a 3 éléments principaux qui sont : le groupe de consommateurs de ressources, le plan de ressources et les directives du plan de ressources"
+      ]
+    },
+    {
+      "tag": "elements",
+      "patterns": [
+        "What are the elements of oracle resource manager ?",
+        "elements",
+        "what are the elements",
+        "resource manager elemnts"
+      ],
+      "responses": [
+        "there are 3 main elements which are: Resource consumer group, Resource plan and Resource plan directives"
+      ]
+    },
+    {
+      "tag": "administerar",
+      "patterns": [
+        "ماذا علي أن أفعل لأتمكن من إدارة مدير موارد أوراكل؟",
+        "إدارة مدير موارد أوراكل",
+        "إدارة"
+      ],
+      "responses": [
+        "يجب أن يكون لديك احد امتيازات النظام لإدارة إدارة الموارد."
+      ]
+    },
+  {
+      "tag": "administerfr",
+      "patterns": [
+        "que dois-je faire pour administrer le gestionnaire de ressources Oracle ?",
+        "administrer le gestionnaire de ressources Oracle ?",
+        "administrer"
+      ],
+      "responses": [
+        "Vous devez disposer d'un privilège système pour administrer le gestionnaire de ressources."
+      ]
+    },
+    {
+      "tag": "administer",
+      "patterns": [
+        "what do i have to do in order to administer the oracle resource manager ?",
+        "administer the oracle resource manager",
+        "administer"
+      ],
+      "responses": [
+        "You must have a system privilege to administer the Resource Manager. "
       ]
     }
   ]
